@@ -1,0 +1,193 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "introduction"
+	group: ""
+	icon: "minecraft:torch"
+	id: "03315D67020057FC"
+	images: [{
+		height: 7.0d
+		image: "fzzy_config:textures/gui/sprites/widget/popup/background.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 3.5d
+		y: 1.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["  In this modpack, you will play as if you are the spectator of your character and his story. The quest will be written as if you are talking to yourself."]
+			id: "45ACDF5849C0905E"
+			rewards: [{
+				count: 16
+				id: "30DA74267BB1778A"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3587121C091BDC46"
+				title: "Introduction"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45ACDF5849C0905E"]
+			description: ["  This modpack is made with the intention of being difficult. You will have to train, farm, level up and use ressources from the world to be able to defeat the final boss, the Void Shadow!"]
+			icon: "adventurez:spawn_void_shadow"
+			id: "61BEA1CF0B2C152A"
+			rewards: [{
+				count: 16
+				id: "511A9BE56DA4D0FD"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44E57CA5D750AA28"
+				title: "ModPack objectif"
+				type: "checkmark"
+			}]
+			title: "Modpack Objectif"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["61BEA1CF0B2C152A"]
+			description: ["  We recommand playing in multiplayer. You will find out soon, the map is not a classic minecraft world. We optimised it to be lag free on server. It is still possible in solo, but more lag is to be expected and progression will be harder and more slow. "]
+			icon: "minecraft:player_head"
+			id: "1B4D5001EA7D974E"
+			rewards: [{
+				count: 8
+				id: "7B3533B4DA8D0C73"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "325D3E46ECE413FC"
+				title: "Multiplayer"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["55FED54BB27DB79B"]
+			description: [
+				"   As you might figure out, we added a mod call ''step up''. That mod allow you to auto-jump blocks like the vanilla one. But this one is more smooth. To toggle of this option, the default key bind is ''J ''.                                                                                     "
+				""
+				"   Using ''StepUp'' reduce the need for food. Reducing the calories used for jump. In addition, it allow you to use the dodge roll abillity: ''R'' as default, and not hitting block when rolling like a rock."
+			]
+			icon: "artifacts:rooted_boots"
+			id: "626090B712AB9A4B"
+			rewards: [{
+				count: 4
+				id: "70055931443E6243"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			subtitle: "Default keybind : ''J ''"
+			tasks: [{
+				id: "7A066FF0909FE78B"
+				type: "checkmark"
+			}]
+			title: "Step Up"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["55FED54BB27DB79B"]
+			description: ["  For the jobs, you will have to press the ''K'' key on your keyboard (as default). It will open the interface for skill. Then you can check on top of that window. You should see an option to switch window into the jobs menu! Since we have a bug and we nerf so much the way to get experience, we allow everyone to take all the jobs at once instead of the regular 2 offer in Big Globe."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3208EB9AB70E5E41"
+			rewards: [{
+				count: 4
+				id: "39F3B25C573F2A96"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2519EC05DCD97406"
+				title: "Jobs and skill"
+				type: "checkmark"
+			}]
+			title: "Jobs"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["61BEA1CF0B2C152A"]
+			description: [
+				"  The skill menu can be acces with pressing ''K'' (default). By pressing it, it will open the menu for all the skill availlable. You will have to chose carefully the skill you set up and choose at first because, as exemple, you will not be able to mine ore until you reach mining level 5. "
+				""
+				"  To see all the things that are lock behind certain jobs, you can click the job icon in that same menu. You will have a list that is pretty much self explanatory. Also JEI give some info."
+			]
+			icon: "levelz:rare_candy"
+			id: "55FED54BB27DB79B"
+			rewards: [{
+				count: 16
+				id: "00941D60ACA6CC3B"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			subtitle: "Default Keybind : ''K''"
+			tasks: [{
+				id: "548350ACAE22E151"
+				title: "Skill Point"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55FED54BB27DB79B"]
+			description: ["  The lantern is an important aspect of your survival. It will light up the area around you when exploring caves and dungeons. To acces the curios slot, open your inventory, top right of your player you should see a small button. Open it, then ad the lantern in the belt slot."]
+			icon: "minecraft:lantern"
+			id: "0CC48EB0424D539E"
+			rewards: [{
+				count: 4
+				id: "09D255F1D36BE76B"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17B566A64AD71A85"
+				title: "Lantern"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55FED54BB27DB79B"]
+			description: [
+				"  In this modpack, you will have to face multiple challenge. One of them is season! Crops that you will grow are season dependant. So prepare accordingly. One season last &490 minecraft days&r. "
+				""
+				"We also modify the time for each minecraft day to last twice as much as the vanilla timing, that way you have more time during the day to be productive."
+			]
+			icon: "sereneseasons:calendar"
+			id: "4B17A65157477B6A"
+			rewards: [{
+				count: 4
+				id: "314BA9CB6237A24D"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B3FE0D9FAF9E5E"
+				title: "Season"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+	]
+	title: "Introduction"
+}

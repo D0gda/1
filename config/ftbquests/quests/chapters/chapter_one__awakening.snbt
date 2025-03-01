@@ -1,0 +1,659 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_one__awakening"
+	group: "0A23AE97B3017DEB"
+	icon: {
+		Count: 1
+		id: "minecraft:wooden_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "6D412F3DD035BD6C"
+	images: [{
+		height: 3.0d
+		image: "healingbed:textures/123.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: -7.0d
+		y: 2.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["03315D67020057FC"]
+			description: [
+				"  It was a beautiful day to go work in the mine. I have reach the coal vein I was supossed to collect. When suddenly, I heard a strong scream comming from the shadow followed by a suffocating breath that came right for me! I was so scared that i left the mine without thinking twice or looking back. I even drop my pickaxe in the mineshaft."
+				"{@pagebreak}"
+				"Where I am? This is NOT the village I live in! Where is my house? My friends and familly!? What is this place! What was that thing in the mine! Everything whent black..."
+			]
+			icon: "minecraft:minecart"
+			id: "3215CC095318AAFD"
+			rewards: [{
+				count: 5
+				id: "4BAC4940BCBF121B"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25C5BB8AEA4DD8B6"
+				title: "From the dark"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["03315D67020057FC"]
+			description: ["The Bounty board is a great way to make some money. People in need around here post their request on it. In exchange, i can get some reward in money and item. It is a great way to make easy money to buy better gear or item."]
+			id: "35007B8521D9F88F"
+			rewards: [{
+				id: "019FCBA936598D02"
+				item: "numismatic-overhaul:silver_coin"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "bountiful:bountyboard"
+				id: "275F6E00048776D1"
+				observe_type: 0
+				timer: 0L
+				title: "Bounty Board"
+				to_observe: "bountiful:bountyboard"
+				type: "observation"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C0F0540504D9C39"]
+			description: ["  I know from my grandfather, farming is also loving the earth and appreciate what mother nature give's to us. He also told me about some vegetable groing in different season. Some grow only in a specific season, like winter, when other grow in two, tree season or even all years around! That is also why I should varie what I sow."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5FD78ABAE823C5A6"
+			rewards: [{
+				count: 3
+				id: "5B30C99E68245219"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 16L
+					id: "0C37D63FF69B8EB3"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "5E8DA061FC846DF0"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "4BB9F4033096F315"
+					item: { Count: 16, id: "minecraft:wheat" }
+					type: "item"
+				}
+			]
+			title: "1st Settlement"
+			x: -13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3215CC095318AAFD"]
+			description: ["  I wonder what is happening! I am scared... I'm lost. I feel like I need food. Good thing I brought &616 pieces of bread&r and some apple... But that will not last for long. Should I start by making a garden and produce my own food? I can also try to talk to the villager over here. Ok. first things first. I should start by creating myself a small shelter for the night. For it, I will need at least &410 oak logs&r. With that i can probably make some basic material with a Crafting table."]
+			id: "7488D86C050AA36A"
+			rewards: [{
+				count: 6
+				id: "3C6028D86569FCC0"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "2967FCE3E84124D7"
+				item: { Count: 10, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			title: "Shelter"
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7488D86C050AA36A"]
+			description: [
+				"Making a crafting table is something I will need to assemble some &1basic material&r into more advance tool and stuff. I have a feeling that my knowledge of all the possible thing to do are right their, in my mind. If I look trough my pocket, I see all the possibility of what i can create. "
+				""
+				"(You can look throught &4JEI&r to see all the craft, block, tools, weapon and armor)"
+			]
+			id: "6A478EA251A9346F"
+			rewards: [{
+				id: "0C46CE42B62C14B1"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "78A4B2B5CA3F990A"
+				item: "minecraft:crafting_table"
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Knowledge is opportunity"
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A478EA251A9346F"]
+			description: [
+				"I feel clumsy dropping my pickaxe on the floor when trying to escape the mine. Now I am stuck to create a new one, made out of wood... I would need"
+				"&62 sticks&r and &63 planks&r to make myself a simple wooden one. At least, I would be able to harvest some stone to create better tool later on."
+			]
+			id: "4DD7319428FD5128"
+			rewards: [{
+				count: 6
+				id: "65BE0D5B6E9E9EE8"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0BD8AE209D5BDEFA"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "New Start"
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4DD7319428FD5128"]
+			description: ["I should start thinking making myself a good renewable source of food. One to be more independant. I would need to varie my allimentation to keep myself healty. The base to all thing will be to grow plant using a hoe."]
+			id: "6C0F0540504D9C39"
+			rewards: [{
+				count: 6
+				id: "231335AFF332352E"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1ED5025D2F3DC3FD"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "No more Hunger"
+			x: -11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4DD7319428FD5128"]
+			description: ["I remember... The amount of stone excavate from the mine... At leat, we can use it to create fondation, tools and way more. I should think to upgrade right away my tools and create mystalf a furnace."]
+			id: "0AC5586A8E55E7FD"
+			rewards: [{
+				count: 6
+				id: "236D986B50486DD2"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "10B52F968AA209CC"
+				item: { Count: 16, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Stone upgrade"
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["03315D67020057FC"]
+			description: [
+				"  Those stone have a strange aura comming from it. At least it is nothing evil. I feel some force that pull my hand towards it. It want me to touch it. I have to... try. I did it! Now i can't go back. Some strange white runes show from it after that contact."
+				""
+				"Some magical power prevent me from mining it. It will have to stay there. I feel like all those rocks are binded togheter, like if they are link. I can teleport myself from one and a other! What is that sorcery!"
+			]
+			icon: "waystones:waystone"
+			id: "5CEEDB10EA9C58DE"
+			rewards: [{
+				count: 4
+				id: "2D2E8E40D2E09165"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "waystones:waystone"
+				id: "7F18584868DE36FA"
+				observe_type: 2
+				optional_task: true
+				timer: 0L
+				to_observe: "waystones:waystone"
+				type: "observation"
+			}]
+			title: "A way back home"
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5FD78ABAE823C5A6"]
+			description: ["  One step further for a renewable and stable source of food will be some animal breeding. I will have to sacrifice a bit of my crops to achive some breeding, but in the end, i would have better variety of food, diverce my amount of proteins, carbs, fats, and vitamine... at least for what I know..."]
+			id: "2F1FFFAE17FE2958"
+			rewards: [{
+				count: 4
+				id: "2FE6565FA8BC121C"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:husbandry/breed_an_animal"
+				criterion: ""
+				icon: "minecraft:wheat"
+				id: "3D31C133C7025376"
+				title: "Husbandery"
+				type: "advancement"
+			}]
+			x: -14.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5FD78ABAE823C5A6"]
+			description: ["I feel like cultivating berry help me understanding more quickly the base of this new world. But i feel also like at some point, after I figure out and master all the basic of the sweetberry, my knowledge will start to grow more slowly, and latter, be useless."]
+			id: "41399AD3CE160548"
+			rewards: [{
+				count: 6
+				id: "2B05D25032F910E1"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "30C71D9DC7F23F33"
+				item: { Count: 16, id: "minecraft:sweet_berries" }
+				type: "item"
+			}]
+			title: "Sweet tooth"
+			x: -14.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7488D86C050AA36A"]
+			description: ["Over here, the time move slower. All the mobs do not die during the day! I feel like sleeping away my nightmare is a must to survive in this world."]
+			id: "2C198814EC092C39"
+			rewards: [{
+				count: 6
+				id: "4D20FC241B797CA3"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				id: "687C556DA9B3993B"
+				type: "advancement"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2C198814EC092C39"]
+			id: "2AE6CE7BAA6BE6D9"
+			tasks: [{
+				id: "1741A3C68DFA0189"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:healing"
+					}
+				}
+				type: "item"
+			}]
+			title: "Healling line"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0AC5586A8E55E7FD"]
+			description: [
+				"Making a furnace will help me cook food, smelt ore, and melt stone and other piece of equipement useless to me. It is essential for my own survival."
+				""
+				"But i feel like i need to know a little bit of the art of farming to create my 1st one."
+			]
+			id: "0FD6F16D5B66A612"
+			rewards: [{
+				count: 5
+				id: "463D11DD918FFEF8"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "463986A2A74C994E"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0AC5586A8E55E7FD"]
+			description: ["Finnally! Getting my knwoledge of the art of mining have let me understand how to create and use a stone tool! (need to be &4mining level 4&r) Using a stone tool will help me gather ressources like coal, copper and more around the world more quickly. Durrability of the tools also was increase, making it more usefull to use and more time efficient."]
+			id: "62D0D0EF99A23D81"
+			rewards: [{
+				count: 4
+				id: "045511AF1C389262"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4ED4174F8D38BCF0"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Stone Age"
+			x: -11.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0FD6F16D5B66A612"]
+			description: ["Learning the technology of the smoker realy make it more easy around here! It is way faster but consume more fuel to go. But I am at a point where using only food in it to keep everything safe to eat. (need to be &4farming 10&r)"]
+			id: "2B28D2E4A6ECA472"
+			rewards: [{
+				count: 5
+				id: "6D03DEC84DCC335B"
+				item: "numismatic-overhaul:silver_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D673BF13F3D4A7B"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			title: "Smoke meat everyday!"
+			x: -14.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0FD6F16D5B66A612"]
+			description: ["The ability to create a blast furnace to make my smelting ability faster in exchange of a faster fuel consumption is great. Saving me time is a key to my succes."]
+			id: "6C4CF8458D937262"
+			rewards: [{
+				count: 6
+				id: "0907F8BD499920EB"
+				item: "numismatic-overhaul:silver_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59A1D6B571441341"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "Blasting the ore"
+			x: -13.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["62D0D0EF99A23D81"]
+			description: ["Coal is the best source of fuel around me at this time, I would need some to fuel my furnace and create some torch "]
+			id: "0A4BD8680A4F1FE9"
+			rewards: [{
+				count: 4
+				id: "6F894AFEE3DE06C8"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "238535FE84DB17DA"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			title: "My fuel from the past"
+			x: -11.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4DD7319428FD5128"]
+			description: ["A good start to be more efficient on harvesting wood will be to get myself a wooden axe. My 1st few three will certainly help me upgrade my base and create more planks for a divercity of project."]
+			id: "49E69DABCA4A597B"
+			rewards: [{
+				count: 4
+				id: "4A688EAE88175072"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52AAB6B8C5DCB6E5"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4DD7319428FD5128"]
+			description: ["I keep getting some scratch on my hand trying to remove dirt, I should use a wooden shovel to increase my work speed."]
+			id: "1D7A7CD25BAC6A0C"
+			rewards: [{
+				count: 4
+				id: "06F2D8C7D72C84A4"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C87EC2A8BD94381"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4DD7319428FD5128"]
+			description: ["All the mobs around here are dangerous. I should deffends myself with a sword. Even if it is a scrappy wooden sword, it is better then using my fist against an army of undead."]
+			id: "1045036B23E4C2DF"
+			rewards: [{
+				count: 4
+				id: "3818AE8CA61A2B80"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AD3B98FBE9DBA4A"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0A4BD8680A4F1FE9"]
+			description: ["The copper... a ore that is really aboundant over here, and their is so much use to it. I can't keep myself of thinking the primary use for it wich is to create a water purrification station. A priority for my survival. But of course, i can use it to create more advance mechanical stuff later on."]
+			id: "5D54519C3ECFB303"
+			rewards: [{
+				count: 6
+				id: "49620ADF5F656E61"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "09EE90834F8AA657"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			title: "David CopperField"
+			x: -13.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0A4BD8680A4F1FE9"]
+			description: ["Getting Iron is the first step to get into the Iron age. getting a few ore will grant me acces to beter armor and sword. These will be a immense leap into my understanding of this world."]
+			id: "0BFD71BCEA78F847"
+			rewards: [{
+				id: "4049C7A01D62E6A0"
+				item: "numismatic-overhaul:silver_coin"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "4235C7BBCEDE08AF"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"5D54519C3ECFB303"
+				"0FD6F16D5B66A612"
+			]
+			description: ["I need to get my thirst in check. For that, i would need a good water source near by, I would need to get myself a bucket and flask. After i got myself a water source, I would need to purrifie it before drinking it. To create a water purrificator, i would need &62 glass&r, &43 copper ingot&r and &e3 planks&r. As fuel, I can only use charcoal and not coal or other heating source."]
+			id: "6162D396F5EC442D"
+			rewards: [{
+				id: "51731B614BB63BE2"
+				item: "numismatic-overhaul:silver_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11D9803AF17AD463"
+				item: "toughasnails:water_purifier"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["62D0D0EF99A23D81"]
+			description: ["After the use of the stone for my pickaxe, i can bet the same benefit will applie to all the rest of my arsenal. I should then upgrade everything into stone. Anyway, the mine provide me with way to many stone."]
+			id: "1B4519C346ABBF8B"
+			rewards: [{
+				count: 15
+				id: "4C301B3F8DCAC2A0"
+				item: "numismatic-overhaul:bronze_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "11AA702ACF3CCC34"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "705FA2630FAC8C45"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "706C0D8BC934DA22"
+					item: {
+						Count: 1
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Stone arsenal"
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2C198814EC092C39"]
+			id: "1902D0BA2E204D3E"
+			tasks: [{
+				id: "116FD25FC2746DD6"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1902D0BA2E204D3E"]
+			id: "7A64BE986C9D7F7D"
+			tasks: [{
+				id: "13058B98E093027D"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A64BE986C9D7F7D"]
+			id: "02BEAD2B7517DA7E"
+			tasks: [{
+				id: "33E79BABDD91AEE2"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+	]
+	title: "Chapter One: Awakening"
+}

@@ -1,0 +1,8 @@
+{
+	"crazyMobs": true,
+	"keepInventory": false,
+	"waterSourceConversion": false,
+	"bigglobe:daylightCycleSpeed": 0.5,
+	"bigglobe:dangerousRapids": true,
+	"spawnRadius": 0
+}

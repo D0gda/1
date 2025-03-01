@@ -1,0 +1,39 @@
+{
+  "allowMovement": {
+    "net.minecraft.class_433": false,
+    "net.minecraft.class_429": false,
+    "me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen": false,
+    "dev.emi.emi.screen.ConfigScreen": false,
+    "dev.emi.emi.screen.ConfigEnumScreen": false,
+    "dev.emi.emi.screen.RecipeScreen": false,
+    "net.levelz.screen.SkillScreen": true,
+    "net.jobsaddon.screen.JobScreen": true,
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": false,
+    "io.wispforest.accessories.client.gui.AccessoriesScreen": true,
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
+    "net.minecraft.class_458": true,
+    "dev.emi.emi.screen.BoMScreen": true,
+    "net.minecraft.class_5375": true,
+    "com.blamejared.controlling.client.NewKeyBindsScreen": true,
+    "dlovin.inventoryhud.config.gui.InventoryConfigScreen": true,
+    "dlovin.inventoryhud.config.gui.ArmorConfigScreen": true,
+    "dlovin.inventoryhud.config.gui.PotionConfigScreen": true,
+    "dlovin.inventoryhud.config.gui.TrinketsConfigScreen": true,
+    "dlovin.inventoryhud.config.InGameConfigScreen": true,
+    "xaero.common.gui.GuiAddWaypoint": true,
+    "xaero.map.gui.GuiMap": true,
+    "com.tiviacz.travelersbackpack.client.screen.TravelersBackpackHandledScreen": true,
+    "io.ejekta.bountiful.client.BoardScreen": true,
+    "toughasnails.client.gui.ThermoregulatorScreen": true
+  },
+  "hideBackground": {
+    "dev.emi.emi.screen.RecipeScreen": false,
+    "net.levelz.screen.SkillScreen": true,
+    "net.jobsaddon.screen.JobScreen": true,
+    "dev.ftb.mods.ftblibrary.ui.ScreenWrapper": false,
+    "io.wispforest.accessories.client.gui.AccessoriesScreen": true,
+    "com.tiviacz.travelersbackpack.client.screen.TravelersBackpackHandledScreen": true,
+    "io.ejekta.bountiful.client.BoardScreen": true,
+    "toughasnails.client.gui.ThermoregulatorScreen": true
+  }
+}
